@@ -1,0 +1,66 @@
+/* sizing  */
+.scene
+{
+    margin: auto;
+    margin-top: 250px;
+    width: 10em;
+    justify-content: center;
+    align-items: center;
+
+}
+/* set the speed ,w,h, the 3d moving  */
+.cube
+{
+    color: #ccc;
+    cursor: pointer; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 0.85s cubic-bezier(.17 ,.67 ,.14 ,.93) ;
+    transform-origin: 100% 50% ;
+    transform-style: preserve-3d;
+    width: 10em;
+    height: 4em;
+
+}
+/*set  the angle you want here (the way you ant "new yaer " to aper  */
+.cube:hover
+{
+
+    transform: rotateX(-90deg);
+
+}
+/* set the side itself*/
+.side
+{
+    box-sizing: border-box;
+    border-radius: 20px;
+    position: absolute;
+    display: inline-block;
+    height: 4em;
+    width: 10em;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 1.5em;
+    font-weight: bold;
+
+}
+/* set the top ,set the  translate in 3d here  "happy"*/
+.top
+{
+    background:red ;
+    color: #2229;
+    transform:  translate3d(0,0,2em);
+    box-shadow: inset 0 0 0 5px #fff;
+
+
+
+
+}
+
+/* set the front ,set the  rotateX  in the x axes here  "new year"*/
+.front
+{
+    background: #2229;
+    color: #fff;
+    transform: rotateX(90deg) translate3d(0,0,2em);
+    box-shadow: inset 0 0 0 5px #fff;
+}
